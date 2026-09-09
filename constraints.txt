@@ -22,7 +22,7 @@ markdown-it-py==4.2.0
 mdurl==0.1.2
 msgpack==1.2.2
 numpy==2.5.3
-opencv-python-headless==4.14.0.94
+opencv-python-headless==5.0.0.93
 packageurl-python==0.17.6
 packaging==26.3
 pillow==12.3.0
