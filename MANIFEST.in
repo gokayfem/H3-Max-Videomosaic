@@ -1,0 +1,4 @@
+include README.md SECURITY.md CONTRIBUTING.md constraints.txt .env.example
+recursive-include docs *.md *.jpg
+recursive-include tests *.py
+recursive-include scripts *.py

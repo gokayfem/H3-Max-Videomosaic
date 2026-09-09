@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "h3-max-videomosaic"
+version = "0.1.0"
+description = "A moving portrait made from hundreds of H3 Max Turbo movies."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy>=1.26.4,<3",
+  "scipy>=1.13,<2",
+  "opencv-python-headless>=4.10,<5",
+  "Pillow>=11.3,<13",
+  "requests>=2.32.4,<3",
+]
+
+[project.optional-dependencies]
+upload = ["fal-client>=0.5,<1"]
+dev = ["pytest>=8,<10", "ruff>=0.12,<1", "pip-audit>=2.9,<3", "build>=1.2,<2"]
+
+[project.scripts]
+videomosaic = "videomosaic.cli:main"
+
+[project.urls]
+Repository = "https://github.com/gokayfem/H3-Max-Videomosaic"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+videomosaic = ["catalog.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

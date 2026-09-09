@@ -1,0 +1,39 @@
+# Credentials and machine configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+
+# Local runs contain paid media, queue receipts, and private prompts.
+runs/
+data/
+artifacts/
+outputs/
+state/
+cache/
+*.mp4
+*.mov
+*.webm
+*.npy
+*.npz
+*.part
+*.log
+
+# Python and tools
+.venv/
+.dev-deps/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
