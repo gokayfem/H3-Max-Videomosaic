@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-upload = ["fal-client>=0.5,<1"]
+upload = ["fal-client>=0.5,<2"]
 dev = ["pytest>=8,<10", "ruff>=0.12,<1", "pip-audit>=2.9,<3", "build>=1.2,<2"]
 
 [project.scripts]
